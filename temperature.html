@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khanzi's Temperature Converter</title>
+    <link rel="stylesheet" type="text/css" href="Layout.css">
+   </head> 
+
+   <body>
+      <div class="converter">
+         <h1>Khanzi's Temperature Converter</h1>
+         <label for="celsius">Celsius:</label>
+         <input type="number" id="celsius" oninput=" convertToKelvin(this.value); convertToFahrenheit(this.value);">
+         <br>
+         <label for="Kelvin">Kelvin:</label>
+         <input type="number" id="kelvin" oninput="convertToCelsius(this.value); convertToFahrenheit(this.value);">
+         <br>
+         <label for="fahrenheit">Fahrenheit:</label>
+         <input type="number" id="fahrenheit" oninput="convertToCelsius(this.value); convertToKelvin(this.value);">
+         <br>
+        <center> <button id="calculate-btn">Calculate</button></center>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
